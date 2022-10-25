@@ -1,0 +1,255 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.hero > .left-h {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+  text-overflow: inherit;
+  margin-top: 8.5rem;
+}
+
+.hero-text > div:nth-of-type(3) {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 80%;
+  line-height: 2rem;
+}
+
+.figures > div > span:nth-of-type(1) {
+  color: black;
+  font-size: 2rem;
+}
+.figures > div > span:nth-of-type(2) {
+  color: gray;
+  text-transform: uppercase;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  font-weight: normal;
+  padding-top: 2rem;
+}
+
+.hero-image {
+  position: absolute;
+  top: 8.5rem;
+  right: 8rem;
+  width: 45rem;
+}
+
+.hero-fire {
+  position: absolute;
+  width: 40rem;
+  top: 10rem;
+  right: 10rem;
+  z-index: -1;
+}
+
+/* ========MEDIUM DEVICES======= */
+@media screen and (max-width: 1013px) {
+  .hero {
+    height: 80vh;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    text-overflow: inherit;
+    margin-top: 8.5rem;
+  }
+
+  .hero-text > div:nth-of-type(3) {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 2rem;
+  }
+
+  .figures > div > span:nth-of-type(1) {
+    color: black;
+    font-size: 1.5rem;
+  }
+  .figures > div > span:nth-of-type(2) {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+    padding-top: 2rem;
+  }
+
+  .hero-image {
+    position: absolute;
+    top: 16.1rem;
+    right: 1rem;
+    width: 31rem;
+    height: 31rem;
+  }
+
+  .hero-fire {
+    position: absolute;
+    width: 25rem;
+
+    top: 16rem;
+    right: 0rem;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: black;
+    text-overflow: inherit;
+    margin-top: 8.5rem;
+  }
+
+  .hero-text > div:nth-of-type(3) {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 2rem;
+  }
+
+  .figures > div > span:nth-of-type(1) {
+    color: black;
+    font-size: 1.3rem;
+  }
+  .figures > div > span:nth-of-type(2) {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+    padding-top: 2rem;
+  }
+
+  .hero-image {
+    position: absolute;
+    top: 16.2rem;
+    right: 1rem;
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .hero-fire {
+    position: absolute;
+    width: 21rem;
+
+    top: 16rem;
+    right: 0rem;
+    z-index: -1;
+  }
+}
+/* ========SMALL DEVICES======= */
+@media screen and (max-width: 813px) {
+  .hero {
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .hero > .left-h {
+    padding: 0;
+  }
+  .hero-text {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text > div:nth-of-type(3) {
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .figures {
+    text-align: center;
+    justify-content: center;
+  }
+  .figures > div > span:nth-of-type(1) {
+    font-size: 1rem;
+  }
+
+  .figures > div > span:nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .right-h {
+    position: relative;
+    background: none;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-fire {
+    display: none;
+  }
+}
+
+/* ========LARGE DEVICES=======
+@media screen and (max-width: 1444px) {
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+    color: black;
+    text-overflow: inherit;
+    margin-top: 8.5rem;
+  }
+  .hero-image {
+    position: absolute;
+    top: 6rem;
+    right: 8rem;
+    width: 40rem;
+  }
+} */

@@ -1,0 +1,17 @@
+.exercises {
+  background: #e5e5e5;
+  padding: 20px;
+}
+
+.show-title {
+  margin-bottom: 40px;
+  font-size: 26px;
+}
+
+.show-results {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 110px;
+  flex-wrap: wrap;
+}
